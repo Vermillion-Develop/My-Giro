@@ -1,410 +1,202 @@
-*{
-    margin: 0;
-    /* border: solid green 1px; */
-}
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-h1{
-    font-size: 30px;
-}
-h2{
-    font-weight:  lighter;
-    font-size: 34px;
-}
-
-/*Footer*/
-.upHeader, .downHeader{
-    display: flex;
-    align-items: center;
-    width: 65%;
-    margin: 0 auto;
-}
-.iconHeader, .upHeader p{
-    width: 40%;
-}
-.upHeader{
-    padding: 1% 0;
-    font-size: 16px;
-}
-.upHeader .knopka{
-    width: 58%;
-    display: flex;
-    justify-content: flex-end;
-}
-.navigation{
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
-}
-a{
-    text-decoration: none;
-}
-.navigation a{
-    color: #818181;
-    font-weight: bold;
-    font-size: 14px;
-}
-.knopka a{
-    background-color: #FFA019;
-    border-radius: 15px;
-    color: white;
-    padding: 1.5%;
-    width: 25%;
-    text-align: center;
-    font-weight: bold;
-    font-size: 13px;
-}
-header hr{
-    box-shadow: 0px 0px 2px 1px;
-    border: 0;
-}
-.downHeader{
-    padding: 1% 0 1.5%;
+@media (max-width: 1435px) {
+    .upHeader, .downHeader, .plusMain, .groupMain, .Osobennosti, .catalogList,
+    .catalogCard, .consult, .Information, .Footer {
+        width: 80%;
+    }
+    .knopka a{
+        width: 40%;
+    }
+    .ScooterSection {
+        width: 60%;
+    }
+    
+    .iconHeader {
+        width: 30%;
+    }
+    
+    .navigation {
+        width: 70%;
+    }
+    
+    .upHeader p {
+        width: 50%;
+    }
+    
+    .textFooter {
+        width: 50%;
+    }
+    
+    .Company {
+        width: 40%;
+        gap: 30px;
+    }
+    
 }
 
-/*ГЛАВНЫЙ КОНТЕЙНЕР*/
-/*Название+фон*/
-.Scooter{
-    background: url(images/scooter.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 15% 0;
+@media (max-width: 1050px){
+    .downHeader{
+        gap: 30px;
+    }
+    .iconHeader{
+        width: 30%;
+    }
+    .navigation{
+        width: 80%;
+        justify-content: space-between;
+    }
+    .knopka{
+        width: 35%;
+    }
+    .plusIcons, .groupRight{
+        flex-wrap: wrap;
+    }
+    .catalogButton{
+        width: 30%;
+    }
+    .catalogCard, .consultBlock, .nizCatalog, .Company{
+        flex-wrap: wrap;
+    }
+    .upHeader p, .knopka{
+        width: 100%;
+    }
+    .catalogList{
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    .pravoCatalog{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .groupRight{
+        gap: 10px;
+    }
+    input{
+        padding: 2%;
+    }
+    .everyConsultBlock{
+        margin: 5%;
+        width: 100%;
+    }
+    .TextConsult{
+        width: 100%;
+    }
+    .TextConsult p {
+        margin: 8% 5%;
+    }
+    .TextConsult a{
+        padding: 3%;
+    }
+    .spisok{
+        width: 100%;
+    }
+    
 }
-.ScooterSection{
-    display: flex;
-    flex-direction: column;;
-    width: 40%;
-    margin: 0 auto;
-    color: white;
-    text-align: center;
+
+@media(max-width: 980px){
+    .navigation {
+        display: none;
+        background-color: white;
+        position: absolute;
+        width: 30%;
+        top: 100%;
+        left: 80%;
+        padding: 2%;
+        flex-direction: column;
+    }
+    
+    .nav-toggle:checked ~ .navigation { /* только при установленном флажке */
+        display: flex;
+    }
+    
+    .burger-menu {
+        display: block; 
+    }
+    
+    .downHeader {
+        justify-content: space-between;
+        position: relative;  /* Для позиционирования меню */
+    }
+    .sum{
+        width: 200px;
+    }
+    .Company{
+        width: 50%;
+    }
+    .Footer{
+        gap: 30px;
+    }
+    .catalogCard{
+        justify-content: space-around;
+        gap: 30px;
+        align-items: center;
+    }
+    .catalogCard div{
+        width: 250px;
+    }
 }
-.ScooterSection h2{
-    font-size: 56px;
+
+@media (max-width: 700px){
+    .upHeader{
+      flex-direction: column; 
+      gap: 15px;
+      padding: 4% 0;
+    }
+    .upHeader .knopka{
+        width: 40%;
+    }
+    .upHeader p{
+        text-align: center;
+    }
+    .knopka a{
+        width:100%;
+        padding: 5% 0;
+    }
+    .Footer{
+        flex-wrap: wrap;
+    }
+    .spisok{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .textFooter, .Company{
+        width: 100%;
+    }
 }
-.ScooterSection p{
-    margin: 5% 0 4%;
-    font-weight: lighter;
-    font-size: 20px;
+
+@media (max-width: 768px) {
+    .navigation {
+        display: none;  /* Скрыть навигацию по умолчанию */
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+    
+    .nav-toggle:checked ~ .navigation {  /* Показать меню, если чекбокс отмечен */
+        display: flex;
+    }
+    
+    .burger-menu {
+        display: block;  /* Показать бургер-кнопку */
+    }
+    
+    .downHeader {
+        justify-content: space-between;
+        position: relative;  /* Для позиционирования меню */
+    }
 }
-.catalogButton{
-    background: white;
-    width: 15%;
-    margin: 0 auto;
-    padding: 1%;
-    border-radius: 10px;
-    font-weight: bold;
-    color: #000;
-    font-size: 12px;
+
+@media(max-width: 650px){
+    .nizCatalog{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navigation{
+        width: 40%;
+        top: 100%;
+        left: 60%;
+    }
 }
-/*Перимущества*/
-.Pluses{
-    margin-top: 4%;
-}
-.plusMain{
-    width: 65%;
-    margin: 0 auto;
-}
-.plusIcons{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    margin-bottom: 5%;
-}
-.verhPlus{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 99%;
-    margin-bottom: 4%;
-}
-.plusIconMain{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 23px;
-}
-.plusButtons{
-    display: flex;
-    align-items: center;
-}
-.plusButtons svg path{
-    fill: whitesmoke;
-    transition: 0.3s;
-}
-.plusButtons svg path:hover{
-    fill: rgb(68, 67, 67);
-    transition: 0.3s;
-    cursor: pointer;
-}
-.aboutUs > *{
-    margin-bottom: 2.5%;
-}
-.aboutUs p{
-    font-weight: lighter;
-    font-size: 20px;
-}
-/*Типа форма*/
-.group{
-    background: #FFA425;
-}
-.groupMain{
-    display: flex;
-    padding: 1% 0;
-    width: 65%;
-    margin: 0 auto;
-}
-.groupLeft{
-    width: 35%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    color: white;
-    font-size: 18px;
-}
-.groupRight{
-    width: 55%;
-    display: flex;
-    justify-content: space-evenly;
-    margin-left: auto;
-}
-.groupRight input{
-    background: #FFA425;
-    border-color: white;
-    color: white;
-    border-radius: 5px;
-    font-size: 14px;
-}
-.groupDutton{
-    background: white;
-    padding: 2%;
-    color: black;
-    font-weight: bold;
-    border-radius: 5px;
-    font-size: 14px;
-}
-.groupRight input::placeholder{
-    color: white;
-}
-/*Особенности*/
-.Osobennosti{
-    width: 65%;
-    margin: 5% auto;
-    font-weight: lighter;
-}
-.spisok,.Osobennosti div p{
-    font-size: 20px;
-}
-.spisok{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 5% 0;
-    width: 90%;
-}
-/*Каталог*/
-.catalog{
-    background-color: #FBFBFB;
-    padding: 4% 0;
-    font-weight: lighter;
-}
-.levoCatalog {
-    width: 50%;
-}
-.pravoCatalog{
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
-}
-.pravoCatalog a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #000;
-    font-size: 16px;
-}
-.pravoCatalog a:first-child{
-    background: orange;
-    padding: 1%;
-    width: 10%;
-    border-radius: 15px;
-    color: white;
-}
-.catalogList{
-    width: 65%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.catalogCard{
-    width: 65%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2.5%;
-}
-.catalogCard div{
-    width: 20%;
-    background: white;
-    padding: 2.5% 0;
-    box-shadow: 0px 0px 10px gray;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.catalogCard div a{
-    font-size: 14px;
-}
-.catalogCard div p{
-    padding: 0 10%;
-    font-weight: lighter;
-    font-size: 16px;
-}
-.catalogCard div p:last-child{
-    font-weight: bold;
-}
-.catalogCard img{
-    width: 80%;
-}
-.catalogCard div a{
-    background: orange;
-    padding: 0.5%;
-    position: absolute;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
-    color: white;
-}
-/*Консультанты*/
-.consult{
-    width: 65%;
-    margin: 2% auto;
-}
-.consult h2{
-    margin: 2% auto;
-}
-.consultBlock{
-    display: flex;
-    justify-content: space-between;
-}
-.everyConsultBlock{
-    display: flex;
-}
-.TextConsult p{
-    margin: 10% 5%;
-}
-.TextConsult p:not(:first-child){
-    font-style: italic;
-    font-size: 12px;
-}
-.TextConsult a{
-    background: #FFA019;
-    color: white;
-    margin: 10% 5%;
-    padding: 5%;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 10px;
-} 
-.NameConsult{
-    font-size: 20px;
-}
-/*Бренды*/
-.Brands{
-    background: #FBFBFB;
-    color: #9B9B9B;
-    display: flex;
-    font-size: 3vw;
-    padding: 2% 0;
-    justify-content: space-around;
-    font-weight: bold;
-}
-/*Информация*/
-.Information{
-    width: 65%;
-    margin: 3% auto;
-}
-.Information h2{
-    margin-bottom: 3%;
-}
-.nizCatalog{
-    gap: 30px;
-}
-.sum{
-    padding: 7.5% 0;
-    color: white;
-    width: 22.5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    width: 240px;
-}
-.sum p{
-    width: 80%;
-    text-align: center;
-    font-size: 18px;
-}
-.giroScooter{
-    background: url(images/gero.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.samo{
-    background: url(images/samo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.siga{
-    background: url(images/siga.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.deti{
-    background: url(images/deti.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.nizCatalog{
-    display: flex;
-    justify-content: space-between;
-}
-/*Конец*/
-footer{
-    display: flex;
-    background: #FBFBFB;
-    width: 65%;
-    margin: 3% auto;
-    justify-content: space-between;
-    font-size: 14px;
-}
-.textFooter{
-    width: 35%;
-}
-.textFooter p:not(:first-child){
-    margin-top: 5%;
-}
-.Company{
-    display: flex;
-    width: 45%;
-    justify-content: space-between;
-}
-.listok{
-    display: flex;
-    flex-direction: column;
-    margin-top: 15%;
-}
-.listok a:not(:first-child){
-    margin-top: 2%;
-}
-.listok a,.textFooter{
-    color: #8191A6;
-} 
