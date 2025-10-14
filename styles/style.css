@@ -313,3 +313,98 @@ header hr{
 .NameConsult{
     font-size: 20px;
 }
+/*Бренды*/
+.Brands{
+    background: #FBFBFB;
+    color: #9B9B9B;
+    display: flex;
+    font-size: 3vw;
+    padding: 2% 0;
+    justify-content: space-around;
+    font-weight: bold;
+}
+/*Информация*/
+.Information{
+    width: 65%;
+    margin: 3% auto;
+}
+.Information h2{
+    margin-bottom: 3%;
+}
+.nizCatalog{
+    gap: 30px;
+}
+.sum{
+    padding: 7.5% 0;
+    color: white;
+    width: 22.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    width: 240px;
+}
+.sum p{
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
+}
+.giroScooter{
+    background: url(images/gero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.samo{
+    background: url(images/samo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.siga{
+    background: url(images/siga.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.deti{
+    background: url(images/deti.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.nizCatalog{
+    display: flex;
+    justify-content: space-between;
+}
+/*Конец*/
+footer{
+    display: flex;
+    background: #FBFBFB;
+    width: 65%;
+    margin: 3% auto;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.textFooter{
+    width: 35%;
+}
+.textFooter p:not(:first-child){
+    margin-top: 5%;
+}
+.Company{
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+}
+.listok{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+}
+.listok a:not(:first-child){
+    margin-top: 2%;
+}
+.listok a,.textFooter{
+    color: #8191A6;
+} 
