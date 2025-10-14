@@ -48,6 +48,9 @@ a {
     font-weight: bold;
     font-size: 14px;
 }
+.navigation a:hover{
+    color: #FFA019;
+}
 .knopka a {
     background-color: #FFA019;
     border-radius: 15px;
@@ -86,7 +89,7 @@ header hr {
 /*ГЛАВНЫЙ КОНТЕЙНЕР*/
 /*Название+фон*/
 .Scooter{
-    background: url(images/scooter.png);/*Фон главного экрана*/
+    background: url(../images/scooter.png);/*Фон главного экрана*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -249,10 +252,9 @@ header hr {
     color: #000;
     font-size: 16px;
 }
-.pravoCatalog a:first-child{/*только первый элемент*/
+.pravoCatalog a:hover{/*только первый элемент*/
     background: orange;
     padding: 1%;
-    width: 10%;
     border-radius: 15px;
     color: white;
 }
@@ -375,25 +377,25 @@ header hr {
     font-size: 18px;
 }
 .giroScooter{
-    background: url(images/gero.png);
+    background: url(../images/gero.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .samo{
-    background: url(images/samo.png);
+    background: url(../images/samo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .siga{
-    background: url(images/siga.png);
+    background: url(../images/siga.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .deti{
-    background: url(images/deti.png);
+    background: url(../images/deti.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -437,6 +439,9 @@ footer{
 .listok a,.textFooter{
     color: #8191A6;
 } 
+.listok a:hover{
+    color: #FFA425;
+}
 /*Медиазапросы/адаптация*/
 @media (max-width: 1435px) {
     .upHeader, .downHeader, .plusMain, .groupMain, .Osobennosti, .catalogList,
