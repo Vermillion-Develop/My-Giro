@@ -11,7 +11,7 @@
         <div class="upHeader">
             <p>Мы всегда рады помочь по телефону +7 923 356 9013</p>
             <div class="knopka">
-                <a href="">ЗАКАЗАТЬ ЗВОНОК</a>
+                <a href="#">ЗАКАЗАТЬ ЗВОНОК</a>
             </div>
         </div>
         <hr>
@@ -19,31 +19,37 @@
             <div class="iconHeader">
                 <h1>My-Giro</h1>
             </div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="burger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
             <div class="navigation">
-                <a href="">ПРЕИМУЩЕСТВА</a>
-                <a href="">О НАС</a>
-                <a href="">ОСОБЕННОСТИ</a>
-                <a href="">КАТАЛОГ</a>
-                <a href="">КОМАНДА</a>
-                <a href="">БРЕНДЫ</a>
-                <a href="">ПОЛЕЗНОЕ</a>
+                <a href="#verhPlus">ПРЕИМУЩЕСТВА</a>
+                <a href="#Pluses">О НАС</a>
+                <a href="#Osobennosti">ОСОБЕННОСТИ</a>
+                <a href="#catalog">КАТАЛОГ</a>
+                <a href="#consult">КОМАНДА</a>
+                <a href="#Brands">БРЕНДЫ</a>
+                <a href="#Information">ПОЛЕЗНОЕ</a>
             </div>
         </div>
-    </header>
+    </header>   
     <main>
-        <section class="Scooter">
+        <section class="Scooter" id="Scooter">
             <div class="ScooterSection">
                 <h2>My-Giro</h2>
                 <p>Крупнейший интернет-магазин гироскутеров,
                     сигвеев и электросамокатов от известных мировых
                     производителей
                 </p>
-                <a href="" class="catalogButton">В КАТАЛОГ</a>
+                <a href="#catalog" class="catalogButton">В КАТАЛОГ</a>
             </div>
         </section>
-        <section class="Pluses">
+        <section class="Pluses" id = "Pluses">
             <div class="plusMain">
-                <div class="verhPlus">
+                <div class="verhPlus" id="verhPlus">
                         <h2>Наши преимущества</h2>
                         <div class="plusButtons">
                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" 
@@ -91,19 +97,19 @@
                 </div>
             </div>
         </section>
-        <section class="group">
+        <section class="group" id="group">
             <div class="groupMain">
                 <div class="groupLeft">
                     <p>Подпишитесь на нашу рассылку и оставайтесь в курсе событий</p>
                 </div>
                 <div class="groupRight">
-                    <input type="text" name="" id="" placeholder="Имя">
-                    <input type="text" name="" id="" placeholder="Email">
-                    <a href="" class="groupDutton">ПОДПИСАТЬСЯ</a>
+                    <input type="text" placeholder="Имя">
+                    <input type="text"  placeholder="Email">
+                    <a href="#" class="groupDutton">ПОДПИСАТЬСЯ</a>
                 </div>
             </div>
         </section>
-        <section class="Osobennosti">
+        <section class="Osobennosti" id="Osobennosti">
             <div>
                 <h2>Особенности гироскутеров</h2>
                 <div class="spisok">
@@ -129,7 +135,7 @@
                 </p>
             </div>
         </section>
-        <section class="catalog">
+        <section class="catalog" id="catalog">
             <div class="catalogList">
                     <div class="levoCatalog">
                         <h2>Каталог</h2>
@@ -176,7 +182,7 @@
                 </div>
             </div>  
         </section>
-        <section class="consult">
+        <section class="consult" id="consult">
             <h2>Наши консультанты</h2>
             <div class="consultBlock">
                 <div class="everyConsultBlock">
@@ -184,7 +190,7 @@
                     <div class="TextConsult">
                         <p class="NameConsult">Иван Алексеев</p>
                         <p>менеджер по продажам</p>
-                        <a href="">НАПИСАТЬ</a>
+                        <a href="#">НАПИСАТЬ</a>
                     </div>
                 </div>
                 <div class="everyConsultBlock">
@@ -192,7 +198,7 @@
                     <div class="TextConsult">
                         <p class="NameConsult">Галина Петровна</p>
                         <p>менеджер по продажам</p>
-                        <a href="">НАПИСАТЬ</a>
+                        <a href="#">НАПИСАТЬ</a>
                     </div>
                 </div>
                 <div class="everyConsultBlock">
@@ -200,12 +206,12 @@
                     <div class="TextConsult">
                         <p class="NameConsult">Светлана Астахова</p>
                         <p>менеджер по продажам</p>
-                        <a href="">НАПИСАТЬ</a>
+                        <a href="#">НАПИСАТЬ</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="Brands">
+        <section class="Brands" id="Brands">
             <p>XIAOMI</p>
             <p>SMART</p>
             <p>BALANCE</p>
@@ -214,7 +220,7 @@
             <p>SUBOR</p>
             <p>AIRWHEEL</p>
         </section>
-        <section class="Information">
+        <section class="Information" id="Information">
             <h2>Полезная информация</h2>
             <div class="nizCatalog">
                 <div class="giroScooter sum">
@@ -233,41 +239,43 @@
         </section>
     </main>
     <footer>
-        <div class="textFooter">
-            <p>
-                В нашем интернет-магазине представлен большой выбор гироскутеров,
-                сигвеев и электросамокатов от известных мировых производителей.
-            </p>
-            <p>
-                Все товары, представленные на нашем сайте, отобраны лучшими специалистами в этой области.
-            </p>
-            <p>
-                Copyright © 2020 My-Giro
-            </p>
-        </div>
-        <div class="Company">
-            <div >
-                <h5>КОМПАНИЯ MY-GIRO</h5>
-                <div class="listok">
-                    <a href="">О нас</a>
-                    <a href="">Наши преимущества</a>
-                    <a href="">Наши консультанты</a>
-                </div>
+        <div class="Footer">
+            <div class="textFooter">
+                <p>
+                    В нашем интернет-магазине представлен большой выбор гироскутеров,
+                    сигвеев и электросамокатов от известных мировых производителей.
+                </p>
+                <p>
+                    Все товары, представленные на нашем сайте, отобраны лучшими специалистами в этой области.
+                </p>
+                <p>
+                    Copyright © 2020 My-Giro
+                </p>
             </div>
-            <div>
-                <h5>ПОКУПАТЕЛИ</h5>
-                <div class="listok">
-                    <a href="">О нас</a>
-                    <a href="">Каталог</a>
-                    <a href="">Полезная информация</a>
+            <div class="Company">
+                <div >
+                    <h5>КОМПАНИЯ MY-GIRO</h5>
+                    <div class="listok">
+                        <a href="">О нас</a>
+                        <a href="">Наши преимущества</a>
+                        <a href="">Наши консультанты</a>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <h5>ПОМОЩЬ</h5>
-                <div class="listok">
-                    <a href="">Как оформилть заказ</a>
-                    <a href="">Способы оплаты</a>
-                    <a href="">Обмен и возврат товара</a>
+                <div>
+                    <h5>ПОКУПАТЕЛИ</h5>
+                    <div class="listok">
+                        <a href="">О нас</a>
+                        <a href="">Каталог</a>
+                        <a href="">Полезная информация</a>
+                    </div>
+                </div>
+                <div>
+                    <h5>ПОМОЩЬ</h5>
+                    <div class="listok">
+                        <a href="">Как оформилть заказ</a>
+                        <a href="">Способы оплаты</a>
+                        <a href="">Обмен и возврат товара</a>
+                    </div>
                 </div>
             </div>
         </div>
