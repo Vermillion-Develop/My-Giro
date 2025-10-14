@@ -64,3 +64,145 @@ header hr{
 }
 
 /*ГЛАВНЫЙ КОНТЕЙНЕР*/
+/*Название+фон*/
+.Scooter{
+    background: url(images/scooter.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 15% 0;
+}
+.ScooterSection{
+    display: flex;
+    flex-direction: column;;
+    width: 40%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+.ScooterSection h2{
+    font-size: 56px;
+}
+.ScooterSection p{
+    margin: 5% 0 4%;
+    font-weight: lighter;
+    font-size: 20px;
+}
+.catalogButton{
+    background: white;
+    width: 15%;
+    margin: 0 auto;
+    padding: 1%;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #000;
+    font-size: 12px;
+}
+/*Перимущества*/
+.Pluses{
+    margin-top: 4%;
+}
+.plusMain{
+    width: 65%;
+    margin: 0 auto;
+}
+.plusIcons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 5%;
+}
+.verhPlus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 99%;
+    margin-bottom: 4%;
+}
+.plusIconMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+}
+.plusButtons{
+    display: flex;
+    align-items: center;
+}
+.plusButtons svg path{
+    fill: whitesmoke;
+    transition: 0.3s;
+}
+.plusButtons svg path:hover{
+    fill: rgb(68, 67, 67);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.aboutUs > *{
+    margin-bottom: 2.5%;
+}
+.aboutUs p{
+    font-weight: lighter;
+    font-size: 20px;
+}
+/*Типа форма*/
+.group{
+    background: #FFA425;
+}
+.groupMain{
+    display: flex;
+    padding: 1% 0;
+    width: 65%;
+    margin: 0 auto;
+}
+.groupLeft{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+}
+.groupRight{
+    width: 55%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: auto;
+}
+.groupRight input{
+    background: #FFA425;
+    border-color: white;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.groupDutton{
+    background: white;
+    padding: 2%;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.groupRight input::placeholder{
+    color: white;
+}
+/*Особенности*/
+.Osobennosti{
+    width: 65%;
+    margin: 5% auto;
+    font-weight: lighter;
+}
+.spisok,.Osobennosti div p{
+    font-size: 20px;
+}
+.spisok{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 0;
+    width: 90%;
+}
