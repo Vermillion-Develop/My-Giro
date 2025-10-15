@@ -251,12 +251,14 @@ header hr {
     justify-content: center;
     color: #000;
     font-size: 16px;
+    transition: 0.3s;
 }
 .pravoCatalog a:hover{/*только первый элемент*/
     background: orange;
     padding: 1%;
     border-radius: 15px;
     color: white;
+    transition: 0.3s;
 }
 .catalogList{
     width: 65%;
@@ -645,3 +647,4 @@ footer{
         left: 60%;
     }
 }
+
